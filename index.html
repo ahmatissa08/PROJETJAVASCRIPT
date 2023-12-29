@@ -7,18 +7,30 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <form id="calculatorForm">
-        <label for="num1">Nombre 1 :</label>
-        <input type="text" id="num1" name="num1" required pattern="\d+(\.\d+)?" title="Entrez un nombre valide">
-        <label for="num2">Nombre 2:</label>
-        <input type="text" id="num2" name="num2" required pattern="\d+(\.\d+)?" title="Entrez un nombre valide et non zéro">
-        
-        <button type="button" onclick="calculate()">
-         Calculer
-        </button>
-    </form>
-    <div id="result"></div>
-    <script src="calculatrice.js"></script>
+    <div class="center">
+        <div class="container">
+            <header>
+                <h1>Calculatrice JS</h1>
+            </header>
 
+            <form id="calculatorForm">
+                <label for="num1">Nombre 1:</label>
+                <input type="text" id="num1" name="num1" required pattern="\d+(\.\d+)?" title="Entrez un nombre valide">
+
+                <label for="num2">Nombre 2:</label>
+                <input type="text" id="num2" name="num2" required pattern="\d+(\.\d+)?" title="Entrez un nombre valide et non zéro">
+
+                <button type="button" onclick="calculate()">Calculer</button>
+            </form>
+
+            <div id="result"></div>
+        </div>
+
+        <footer>
+            <p>© 2023 Calculatrice JS</p>
+        </footer>
+    </div>
+
+    <script src="calculatrice.js"></script>
 </body>
 </html>
